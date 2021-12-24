@@ -10,6 +10,7 @@
 ### Connect with me:
 [<img align="left" alt="chinjto | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
 
+[website]: http://www.cyril-defaye.fr
 [monext]: https://www.monext.fr/
 [repotako]: https://github.com/takoyadev
 [linkedin]: https://www.linkedin.com/in/cyrildefaye/
