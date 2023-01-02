@@ -1,10 +1,10 @@
 ### Hi there, I'm [Cyril][website], aka [chinjto][website-chinto]
 
 ## I'm a Traveler, Reader, Gamer and Developer!
-- 💶 I'm currently working at [Monext][monext]!
-- ⚗️ I'm currently exploring Angular Material
+- 💶 I'm currently working at [ADSN][adsn]!
+- ⚗️ I'm currently exploring Angular Material and Python
 - 🌐 I'm looking to collaborate more with my [friends team][repotako]
-- 🎯 2022 Goals 🎯: Create more personnals projects (with and without my [friends team][repotako])
+- 🎯 2023 Goals 🎯: Create more personnals projects (with and without my [friends team][repotako])
 - 🌟 Fun fact 🌟: I love to explore Japan and share with japanese people 🎏 🇯🇵 🗾
 
 ### Connect with me:
@@ -15,7 +15,7 @@
 
 [website]: http://www.cyril-defaye.fr
 [website-chinto]: http://www.chinto.fr
-[monext]: https://www.monext.fr/
+[adsn]: https://www.groupeadsn.fr/
 [repotako]: https://github.com/takoyadev
 [linkedin]: https://www.linkedin.com/in/cyrildefaye/
 [instagram]: https://www.instagram.com/chinjto/
