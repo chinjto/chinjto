@@ -10,7 +10,6 @@
 ### Open to work!
 I'm looking for **new job opportunities in IT**, in Ireland or Sweden, or... any english speaking job opportunity in 🇪🇺EU🇪🇺.
 I am available for employment starting **November 1, 2025**.
-I'm free from **November 1, 2025**.
 
 ### Connect with me:
 [<img align="left" alt="chinjto | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
