@@ -3,7 +3,7 @@
 ## I'm a Traveler, Reader, Gamer and Developer!
 - 💶 I'm currently working at [ADSN][adsn]!
 - ⚗️ I'm currently exploring Angular Prime
-- 🌐 I'm looking to collaborate more with my [friends team][repotako]
+- 🌐 I'm looking to improve my Java and Angular skills with my [friends team][repotako]
 - 🎯 2025/2030 Goals 🎯: Improve my English and Janasese skills!!!
 - 🌟 Fun fact 🌟: I love to explore Japan and share with japanese people 🎏 🇯🇵 🗾
 
