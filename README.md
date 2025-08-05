@@ -9,6 +9,7 @@
 
 ### Open to work!
 I'm looking for **new job opportunities in IT**, in Ireland or Sweden, or... any english speaking job opportunity in 🇪🇺EU🇪🇺.
+
 I am available for employment starting **November 1, 2025**.
 
 ### Connect with me:
