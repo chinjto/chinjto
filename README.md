@@ -1,7 +1,7 @@
 ### Hi there, I'm [Cyril][website], aka [chinjto][website-chinto]
 
 ## I'm a Traveler, Reader, Gamer and Developer!
-- 💶 I'm currently working at [ADSN][adsn]!
+- 💶 I'm currently open to work!
 - ⚗️ I'm currently exploring Angular Prime
 - 🌐 I'm looking to improve my Java and Angular skills with my [friends team][repotako]
 - 🎯 2025/2030 Goals 🎯: Improve my English and Janasese skills!!!
@@ -10,7 +10,7 @@
 ### Open to work!
 I'm looking for **new job opportunities in IT**, in Ireland or Sweden, or... any english speaking job opportunity in 🇪🇺EU🇪🇺.
 
-I am available for employment starting **November, 2025**.
+I am available for employment starting **December, 2025**.
 
 ### Connect with me:
 [<img align="left" alt="chinjto | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/linkedin.svg" />][linkedin]
