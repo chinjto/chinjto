@@ -65,7 +65,6 @@
         \phone{+33 6 68 16 12 33}
         \location{Aix en Provence (13100), France}
         \infofield{}{\textcolor{accent}{\textit{open to relocation in Ireland}}}
-        \vspace{0.5em}
         \homepage{cyril-defaye.fr}{https://www.cyril-defaye.fr}
         \github{@chinjto}{https://github.com/chinjto}
         \linkedin{Cyril DEFAYE}{https://www.linkedin.com/in/cyrildefaye/}
@@ -171,11 +170,11 @@
         
         \section{Interests}
         \wheelchart{1.5cm}{0.5cm}{
-            8/8em/accent!20/Japanese culture,
-            5/8em/accent!40/Movies (American \& French),
+            8/8em/accent!20/ Japanese culture,
+            5/8em/accent!40/ Movies (American \& French),
             2/8em/accent!80/Video games,
             5/8em/accent!60/Board games,
-            4/8em/accent/\textit{Guinness \& cider}
+            4/8em/accent/\textcolor{accent!35}{\textit{Guinness \& cider}}}
         }
     }
     \makebody
@@ -186,65 +185,60 @@
     
     % The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
     % For an empty highlightbar, fill with empty space
-    \highlightbar{\hfill}
+    %\highlightbar{\hfill}
+    \highlightbar{
+        \section{ADSN}
+        \textit{05/2022 - 10/2025}
+        \\ADSN is part of the Groupe ADSN, delivering nationwide digital infrastructure for the French notarial profession under delegated public service duties.
+        \\Its systems support regulated legal processes, including property transactions and official data exchanges.
+        \vspace{0.5em}\\
+        \location{Aix en Provence area, France}
+        \homepage{groupeadsn.fr}{https://www.groupeadsn.fr/}
+        \linkedin{Groupe ADSN}{https://fr.linkedin.com/company/groupeadsn}
+        \vspace{0.5em}\\
+        Referee:\\
+        \contact{Bertil ATHLAN, Developers Manager}{bertil.athlan@adsn.fr}
+        
+    }
     \mainbar{
     
-        \section{Another section}
-        
-        This page uses the page style \texttt{highlightmain} which shows the highlight bar (gray) and the main part (white background) but omits the header. 
-        The default page style is \texttt{headerhighlightmain} with all three elements.
-        If you don't want header, nor highlight bar, use page style \texttt{\textbackslash pagestyle\{empty\}}.
-        \medskip
-        Neither main, nor highlight bar must be filled to make this template work.
-        It is possible to use a page style with the highlight bar but leave it empty by setting an empty highlightbar \texttt{\textbackslash highlightbar\{\}}.
+        \section[\faGears]{Work Details - Lead Software Engineer}
+
+        \textit{09/2023 - 10/2025}
+
+        Technical leadership and fullstack development within ADSN's Central File portfolio.
     
         \vspace{0.5em}
-        \subsection{Subsection 1}
-        Demonstrate subsections.
+        \subsection{\infofield{\faTrophy}{Key Achievements}}
+        \begin{itemize}
+            \item Led a team of 2 developers for the complete redesign of ADSN’s new client portal, built as a multi-frontend architecture using Module Federation.
+            \item Co-led cross-portfolio initiatives with 8 developers, including final developments for the national system managing apostilles and legalizations.
+            \item Maintained and enhanced central APIs and business logic for videoconferencing equipment across the French notariat.
+            \item Integrated new branding guidelines into the public website of the FCDDV project (Central File for Last Wills and Testaments).
+        \end{itemize}
+
+        \vspace{0.5em}
+        \subsection{\infofield{\faWrench}{Tech Stack}}
+        Java, Spring (Boot, Batch, Security, Data), Angular, Module Federation, REST API, SQL (PL/SQL), Oracle, Docker, Git, Linux, XL Deploy
+
+        \vspace{1em}
+        \section[\faGears]{Work Details - Confirmed Software Engineer}
+
+        \textit{05/2022 - 08/2023}
+
+        \todo{Saisir le résumé de la première moitié de l'ADSN}
+    
+        \vspace{0.5em}
+        \subsection{\infofield{\faTrophy}{Key Achievements}}
+        \todo{Trier les points clés de la première et de la seconde moitié}
+
+        \vspace{0.5em}
+        \subsection{\infofield{\faWrench}{Tech Stack}}
+        \todo{Trier les techs de la première et de la seconde moitié}
         
-        \subsection{Subsection 2}
-        Subsection are also bold face but a smaller font then section. They also omit the rule.
-        
-        \achievement{My first achievement}
-        \achievement{My second achievement}
         
     
     }
     \makebody
-    
-    
-    \clearpage
-    \pagestyle{empty}
-    
-    \section{Publications}
-    \pubforcefullwidth
-    
-    Demonstrate what an \texttt{\textbackslash pagestyle\{empty\}} page looks like.
-    Also show off the macros for publications that uses small icons for authors, date, journal and links.
-    
-    Achieving a good looking spacing can be tricky. For empty pagestyles where the full width is available use \texttt{\textbackslash pubforcefullwidth} to force the publoication list to take up all the available space.
-    The (relative) lengths reserved for date, journal and links can be set with the parameters \texttt{\textbackslash pubdatelength}, \texttt{\textbackslash pubjournallength} and \texttt{\textbackslash publinklength} as in \texttt{\textbackslash setlength\{\textbackslash pubdatelength\}\{0.15 \textbackslash linewidth\}}.
-    \bigskip
-    
-    \publication
-    	{The turbulent gas structure in the centers of NGC~253 and the Milky Way} % Title
-    	{\textbf{N. Krieger}, A. Bolatto, E. Koch, A. Leroy, E. Rosolowsky, F. Walter, A. Wei\ss, D. Eden, R. Levy, D. Meier, E. Mills, T. Moore, J. Ott, Y. Su, S. Veilleux} % Authors
-    	{2020} % Year
-    	{The Astrophysical Journal Vol. 899, Issue 2, id.158} % Journal
-    	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...899..158K}, \arXiv{https://arxiv.org/abs/2008.02518}} % ADS & arxiv links
-    
-    \publication
-    	{The molecular ISM in the Super Star Clusters of the starburst NGC253} % Title
-    	{\textbf{N. Krieger}, A. Bolatto, A. Leroy, R. Levy, E. Mills, D. Meier, S. Veilleux, F. Walter, A. Wei\ss} % Authors
-    	{2020} % Year
-    	{The Astrophysical Journal Vol.897, Issue 2, id.176} % Journal
-    	{\ADS{https://ui.adsabs.harvard.edu/abs/2020ApJ...897..176K}, \arXiv{https://arxiv.org/abs/2006.08262}} % ADS & arxiv links
-    
-    \publication
-    	{The Molecular Outflow in NGC\,253 at a Resolution of Two Parsecs} % Title
-    	{\textbf{N. Krieger}, A. Bolatto, F. Walter, A. Leroy, L. Zschaechner, D. Meier, J. Ott, A. Wei\ss, E. Mills, S. Veilleux, M. Gorski} % Authors
-    	{2019} % Year
-    	{The Astrophysical Journal Vol.881, Issue 1, article id. 43, 20 pp} % Journal
-    	{\ADS{https://ui.adsabs.harvard.edu/abs/2019ApJ...881...43K}, \arXiv{https://arxiv.org/abs/1907.00731}} % ADS & arxiv links
 
 \end{document}
