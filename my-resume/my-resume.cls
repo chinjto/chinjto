@@ -51,6 +51,7 @@
 \RequirePackage{xcolor}
 \RequirePackage{fontawesome}
 \RequirePackage{academicons}
+\RequirePackage{xparse}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -102,6 +103,7 @@
 \definecolor{white}{HTML}{FFFFFF}
 \definecolor{black}{HTML}{000000}
 \definecolor{darkgray}{HTML}{333333}
+\definecolor{lightgray}{HTML}{F0F0F0}
 \definecolor{mediumgray}{HTML}{444444}
 \definecolor{gray}{HTML}{5D5D5D}
 % Basic colors
@@ -434,8 +436,16 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % adapted from AltaCV: https://github.com/liantze/AltaCV
-\newcommand{\tag}[1]{%
-  \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+\NewDocumentCommand{\tag}{m o}{%
+    \IfNoValueTF{#2}
+      {\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};}
+      {\tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1 (\textit{#2})};}
+}
+
+\NewDocumentCommand{\tagmajor}{m o}{%
+    \IfNoValueTF{#2}
+        {\tag{\textcolor{accent}{\textbf{#1}}}}
+        {\tag{\textcolor{accent}{\textbf{#1}}}[#2]}
 }
 
 % wheel chart

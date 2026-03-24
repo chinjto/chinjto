@@ -1,0 +1,11 @@
+# LaTeX intermediate files to ignore
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.toc
+*.bbl
+*.blg
+*.run.xml
