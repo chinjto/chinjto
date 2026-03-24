@@ -338,7 +338,7 @@
             \hspace{\dimexpr \marginleft+\marginright}%
             \@mainbar
         }{% if double layout, the highlight bar alternates
-            \ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
+            \Ifthispageodd{% if the page is odd, the highlight bar is on the left (as is for single layout)
                 \@highlightbar
                 \hspace{\dimexpr \marginleft+\marginright}%
                 \@mainbar
@@ -585,9 +585,9 @@
 
 % cardinals
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand\nd{\textsuperscript{nd}\xspace}
-\newcommand\rd{\textsuperscript{rd}\xspace}
-\newcommand\nth{\textsuperscript{th}\xspace}
+\newcommand{\nd}{\textsuperscript{nd}}
+\newcommand{\rd}{\textsuperscript{rd}}
+\newcommand{\nth}{\textsuperscript{th}}
 
 % redaction tools
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
