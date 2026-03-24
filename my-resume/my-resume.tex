@@ -4,18 +4,16 @@
                fontsize=10pt
               ]{my-resume}
 
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set geometry
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \setlength\highlightwidth{8cm}
-\setlength\headerheight{4cm}            % note that margintop gets added to this value, i.e. the header bar is 5cm
+\setlength\headerheight{4cm}
 \setlength\marginleft{1cm}
-\setlength\marginright{\marginleft}      % needs to be 1.5 times to be actually equal. why?
+\setlength\marginright{\marginleft}
 \setlength\margintop{1cm}
 \setlength\marginbottom{1cm}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % FONTS
@@ -23,7 +21,6 @@
 
 \RequirePackage{fontspec}
 \setmainfont{Carlito}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % COLORS
@@ -42,312 +39,16 @@
 % set document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \begin{document}
 
-    \name{Cyril DEFAYE}
-    \tagline{
-        \textcolor{accent}{Senior software engineer} with 11+ years of experience in \textcolor{accent}{Java} and 5+ years in \textcolor{accent}{Angular}.
-        \\Strong interest in software architecture, team leadership, and high-quality solutions
-        \\ in complex environments.
-        \\Looking for \textcolor{accent}{English-speaking opportunities} in \textcolor{accent}{Ireland} to improve language skills.
-        \\Passionate about Japanese culture, open-minded, and eager for new challenges.
-    }
-    \photo[square]{profile.jpg}{\dimexpr \headerheight-\marginbottom}
+    \input{summary}
+
+    \input{works/adsn}
+    \input{works/monext}
+    \input{works/extia}
+    \input{works/natixis}
+    \input{works/scfi}
     
-    \makeheader
-    
-    \highlightbar{
-    
-        \section{Contact}
-        
-        \email{contact@cyril-defaye.fr}
-        \phone{+33 6 68 16 12 33}
-        \location{Aix en Provence (13100), France}
-        \infofield{}{\textcolor{accent}{\textit{open to relocation in Ireland}}}
-        \homepage{cyril-defaye.fr}{https://www.cyril-defaye.fr}
-        \github{@chinjto}{https://github.com/chinjto}
-        \linkedin{Cyril DEFAYE}{https://www.linkedin.com/in/cyrildefaye/}
-        
-        \section{Skills}
-        
-        \skillsection{Programming}
-        \skill{Java / Spring boot}{5}
-        \skill{Typescript / Angular}{4}
-        \skill{HTML/CSS}{5}
-        \skill{LaTeX}{2}
-        
-        \vspace{0.5em}
-        \skillsection{Software \& Tools}
-        \skill{IDE}{5}
-        (e.g. IntelliJ, VSCode, ...)\\
-        \skill{Docker}{4}
-        \skill{CI/CD}{4}
-        (e.g. Gitlab, Jenkins, XL Deploy, ...)\\
-        \skill{Linux}{4}
-        \skill{Office Suite}{4}
-        
-        \vspace{0.5em}
-        \skillsection{Artificial Intelligence}
-        \skill{Prompting}{2}
-        \skill{Vibe Coding}{2}
-        \skill{LLM mechanisms}{2}
-        
-        \vspace{0.5em}
-        \skillsection{Languages}
-        \skill{French}{5}
-        \skill{English}{3}
-        \skill{Japanese}{1}
-        
-        \bigskip
-        
-        \section{Certificates}
-        \simpleskill{L'atelier RGPD (CNIL GDPR MOOC)}
-        \vspace{0.5em}
-        \simpleskill{SST (First Aid Response equivalent)}
-        \textit{December 2024 -- December 2026}\\
-    
-    }
-    \mainbar{
-        \section[\faGears]{Work history}
-        \job{05/2022 - 10/2025}
-            {ADSN, Aix en Provence area, France}
-            {Lead Software Engineer}
-            {}
-        \job{01/2021 - 04/2022}
-            {Monext, Aix en Provence, France}
-            {Confirmed Software Engineer}
-            {}
-        \job{09/2018 - 12/2020}
-            {Extia, Aix en Provence, France}
-            {Software Engineer Consultant}
-            {}
-        \job{09/2013 - 06/2018}
-            {Natixis, Paris area, France}
-            {Software Engineer}
-            {Worked \textcolor{accent}{4 months on-site in Poland} within a software vendor team (\textcolor{accent}{\textit{English daily}})}
-        \job{09/2012 - 09/2013}
-            {SCFI, Paris, France}
-            {Web Developer and Integrator}
-            {}
-        
-        \section[\faMortarBoard]{Education}
-        \job{09/2013 - 09/2015}
-            {AFTI, Orsay, France}
-            {ETGL}
-            {Software engineering expertise\\master level}
-        \job{09/2012 - 09/2013}
-            {UPEC, Fontainebleau, France}
-            {Licence Professionnelle BDISe}
-            {Database, internet and security expertise\\bachelor level}
-        \job{09/2009 - 06/2012}
-            {UPEC, Fontainebleau, France}
-            {DUT Informatique}
-            {Global IT expertise\\university 2\nd degree}
-    
-        \section{General Skills}
-        \smallskip % additional skip because tag outlines use up space
-        \tag{Java 25}
-        \tag{\textbf{Spring Boot 3} (integration, batch, data, security)}
-        \tag{PL/SQL}
-        \tag{\textbf{Angular 21} (standalone, signals)}
-        \tag{Material}
-        \tag{PrimeNG}
-        \tag{Tailwind}
-        \tag{Module Federation}
-        \tag{API-First (OAS)}
-        \tag{DDD}
-        \tag{UML}
-        \tag{TDD}
-        \tag{E2E}
-        \tag{\textbf{Banking}}
-        \tag{\textbf{Payments}}
-        \tag{Healthcare}
-        \tag{Telecom}
-        \tag{Defense}
-        \tag{\textbf{Notary}}
-        
-        
-        \section{Interests}
-        \wheelchart{1.5cm}{0.5cm}{
-            8/8em/accent!20/ Japanese culture,
-            5/8em/accent!40/ Movies (American \& French),
-            2/8em/accent!80/Video games,
-            5/8em/accent!60/Board games,
-            4/8em/accent/\textcolor{accent!50}{\textit{Guinness \& cider}}
-        }
-    }
-    \makebody
-    \clearpage
-    
-    
-    \pagestyle{highlightmain}
-    
-    % The highlightbar needs to be filled to display mainbar contents correctly in singlesised mode
-    % For an empty highlightbar, fill with empty space
-    %\highlightbar{\hfill}
-    \highlightbar{
-        \section{ADSN}
-        \textit{05/2022 - 10/2025}
-        \\ADSN is part of the Groupe ADSN, delivering nationwide digital infrastructure for the French notarial profession under delegated public service duties.
-        \\Its systems support regulated legal processes, including property transactions and official data exchanges.
-        \vspace{0.5em}\\
-        \location{Aix en Provence area, France}
-        \homepage{groupeadsn.fr}{https://www.groupeadsn.fr/}
-        \linkedin{Groupe ADSN}{https://fr.linkedin.com/company/groupeadsn}
-        \vspace{0.5em}\\
-        Referee:\\
-        \contact{Bertil ATHLAN, Developers Manager}{bertil.athlan@adsn.fr}
-        
-    }
-    \mainbar{
-    
-        \section[\faGears]{Work Details - Lead Software Engineer}
-
-        \textit{09/2023 - 10/2025}
-
-        Technical leadership and fullstack development within ADSN's Central File portfolio.
-    
-        \vspace{0.5em}
-        \subsection{\infofield{\faTrophy}{Key Achievements}}
-        \begin{itemize}
-            \item Led a team of 2 developers for the complete redesign of ADSN’s new client portal, built as a multi-frontend architecture using Module Federation.
-            \item Co-led cross-portfolio initiatives with 8 developers, including final developments for the national system managing apostilles and legalizations.
-            \item Maintained and enhanced central APIs and business logic for videoconferencing equipment across the French notariat.
-            \item Integrated new branding guidelines into the public website of the FCDDV project (Central File for Last Wills and Testaments).
-        \end{itemize}
-
-        \vspace{0.5em}
-        \subsection{\infofield{\faWrench}{Tech Stack}}
-        Java, Spring (Boot, Batch, Security, Data), Angular, Module Federation, REST API, SQL (PL/SQL), Oracle, Docker, Git, Linux, XL Deploy
-
-        \vspace{1em}
-        \section[\faGears]{Work Details - Confirmed Software Engineer}
-
-        \textit{05/2022 - 08/2023}
-
-        \todo{Saisir le résumé de la première moitié de l'ADSN}
-    
-        \vspace{0.5em}
-        \subsection{\infofield{\faTrophy}{Key Achievements}}
-        \todo{Trier les points clés de la première et de la seconde moitié}
-
-        \vspace{0.5em}
-        \subsection{\infofield{\faWrench}{Tech Stack}}
-        \todo{Trier les techs de la première et de la seconde moitié}
-        
-        
-    
-    }
-    \makebody
-    \clearpage
-
-    \pagestyle{highlightmain}
-    \highlightbar{
-        \section{Monext}
-        \textit{01/2021 - 104/2022}\\
-        \\Monext is a French payment services provider delivering solutions for electronic payments, fraud management, and digital commerce.
-        \\The company operates secure platforms supporting online and in-store transactions for merchants, banks, and financial institutions.
-        \vspace{0.5em}\\
-        \location{Aix en Provence, France}
-        \homepage{monext.com}{https://www.monext.com/}
-        \linkedin{Monext}{https://www.linkedin.com/company/monext/}
-        \vspace{0.5em}\\
-        Referee:\\
-        \contact{Guillaume SIBIERY, Projects Manager}{guillaume.sibiery@monext.net}
-    }
-    \mainbar{
-        \todo{Renseigner les bonnes informations}\\
-    }
-    \makebody
-    \clearpage
-
-    \pagestyle{highlightmain}
-    \highlightbar{
-        \section{Extia}
-        \textit{09/2018 - 12/2020}\\
-        \\Extia is a French IT consulting and engineering company providing software development and digital services to clients across multiple industries.
-        \\It operates through on-site consulting engagements, supporting organizations in the design, development, and maintenance of business applications.
-        \vspace{0.5em}\\
-        \location{Aix en Provence, France}
-        \homepage{extia-group.com}{https://www.extia-group.com/}
-        \linkedin{Extia}{https://www.linkedin.com/company/extia/}
-        \vspace{0.5em}\\
-        Referee:\\
-        \contact{Cédric VINCENT, Agency Director}{cvincent@extia.fr}
-    }
-    \mainbar{
-        \todo{Renseigner les bonnes informations}\\
-    }
-    \makebody
-    \clearpage
-
-    \pagestyle{highlightmain}
-    \highlightbar{
-        \section{Natixis}
-        \textit{09/2013 - 06/2018}\\
-        \\Natixis is a French corporate and investment bank providing financial services in asset management, insurance, and payments.
-        \\It is part of the Groupe BPCE, one of the largest banking groups in Europe, serving millions of customers through retail banking networks and specialized financial services.
-        \\\textcolor{accent!90}{\textit{Since then, software engineering teams have been integrated into BPCE-SI, the group's application development and maintenance organization.}}
-        \vspace{0.5em}\\
-        \location{Paris area, France}
-        \homepage{groupebpce.com}{https://www.groupebpce.com/}
-        \linkedin{Groupe BPCE}{https://www.linkedin.com/company/bpce}
-        \vspace{0.5em}\\
-        Referee:\\
-        \contact{Benoit JEHAN, Developers Manager}{benoit.jehan@natixis.com}
-    }
-    \mainbar{
-        \todo{Renseigner les bonnes informations}\\
-    }
-    \makebody
-    \clearpage
-
-    \pagestyle{highlightmain}
-    \highlightbar{
-        \section{SCFI}
-        \textit{09/2012 - 09/2013}\\
-        \\SCFI is a French IT services SME specializing in web development and digital solutions for business clients.
-        \\It provides technical services including application development, system integration, and maintenance for small and mid-sized organizations.
-        \vspace{0.5em}\\
-        \location{Paris, France}
-        \homepage{scfi.fr}{https://www.scfi.fr/}
-        \linkedin{SCFI}{https://www.linkedin.com/company/scfi}
-        \vspace{0.5em}\\
-        Referee:\\
-        \contact{Christophe TATIN, CTO}{christophe.tatin@scfi.fr}
-    }
-    \mainbar{
-        \todo{Renseigner les bonnes informations}\\
-    }
-    \makebody
-    \clearpage
-
-    \pagestyle{highlightmain}
-    \highlightbar{
-        \section{AFTI}
-        \textit{09/2013 - 09/2015}\\
-        \\CFA AFTI is a French apprenticeship training center specializing in information technology and telecommunications, founded by Thales Group and closely connected to industry.
-        \\Its programs are largely designed and delivered by practicing engineers, combining academic instruction with hands-on professional experience through work-study training.
-        \vspace{0.5em}\\
-        \location{Orsay, France}
-
-        \vspace{0.5em}
-        \section{UPEC}
-        \textit{09/2009 - 06/2013}\\
-        \\Université Paris-Est Créteil (UPEC) is a public multidisciplinary university located in the Paris region, offering undergraduate and graduate programs across science, engineering, health, and social sciences.
-        \\It serves a large and diverse student population and is part of the French public higher education system.
-        \\
-        \\The IUT Sénart-Fontainebleau, a technical faculty of UPEC, provides vocational and professionally oriented programs in applied sciences and information technology.
-        \\The Fontainebleau campus focuses on smaller cohorts and close collaboration with local industries, delivering practice-oriented training through programs such as the University Diploma of Technology (DUT) and professional bachelor's degrees.
-        \vspace{0.5em}\\
-        \location{Fontainebleau, France}
-        \homepage{u-pec.fr}{https://www.u-pec.fr/}
-        \linkedin{Université Paris-Est Créteil}{https://www.linkedin.com/school/upecofficiel}
-    }
-    \mainbar{
-        \todo{Renseigner les bonnes informations}\\
-    }
-    \makebody
+    \input{study}
 
 \end{document}
