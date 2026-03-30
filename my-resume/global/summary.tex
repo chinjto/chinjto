@@ -30,7 +30,7 @@
     \location{Aix en Provence (13100), France}
     \infofield{}{\textcolor{accent}{\textit{open to relocation in Ireland}}}
     \homepage{cyril-defaye.fr}{https://www.cyril-defaye.fr}
-    \github{@chinjto}{https://github.com/chinjto}
+    \github{@chinjto}{\myGithubHome}
     \linkedin{Cyril DEFAYE}{https://www.linkedin.com/in/cyrildefaye/}
     
     \section{Skills}
@@ -117,6 +117,11 @@
     \tagmajor{Banking} \tagmajor{Payments} \tag{Healthcare} \tag{Telecom} \tag{Defense} \tagmajor{Notary}\\
     
     \hobbies
+
+    \ifthenelse{\boolean{isShort}}{
+       \section{More details}
+        For more details, see my \href{\myGithubRoot/my-resume/full-resume.pdf}{full resume}.
+    }{}
     
 }
 \makebody

@@ -20,7 +20,7 @@ See [my resume][my-resume] for more details.
 [<img align="left" alt="chinjto | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />][facebook]
 [<img align="left" alt="chinjto | LinkedIn" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 
-[my-resume]: ./my-resume/my-resume.pdf
+[my-resume]: ./my-resume/short-resume.pdf
 [website]: http://www.cyril-defaye.fr
 [website-chinto]: http://www.chinto.fr
 [adsn]: https://www.groupeadsn.fr/

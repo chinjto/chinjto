@@ -4,7 +4,7 @@
                doublesided,
                paper=a4,
                fontsize=10pt
-              ]{my-resume}
+              ]{my-commands}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set geometry
@@ -41,16 +41,15 @@
 % set document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\input{my-data}
+
+\newboolean{isShort}
+\newboolean{isFull}
+\setboolean{isShort}{true}
+\setboolean{isFull}{false}
+
 \begin{document}
 
     \input{global/summary}
-
-    \input{works/adsn}
-    \input{works/monext}
-    \input{works/extia}
-    \input{works/natixis}
-    \input{works/scfi}
-    
-    \input{global/study}
 
 \end{document}
