@@ -1,0 +1,128 @@
+\newcommand{\hobbies}{
+    \section{Interests}
+    \wheelchart{1.5cm}{0.5cm}{
+        8/8em/accent!20/ Japanese culture,
+        5/8em/accent!40/ Movies (American \& French),
+        2/8em/accent!80/Video games,
+        5/8em/accent!60/Board games,
+        4/8em/accent/\textcolor{accent!50}{\textit{Guinness \& cider}}
+    }
+}
+
+\name{Cyril DEFAYE}
+\tagline{
+    \textcolor{accent}{Senior software engineer} with 12+ years of experience in \textcolor{accent}{Java} and 5+ years in \textcolor{accent}{Angular}.
+    \\Strong interest in software architecture, team leadership, and high-quality solutions
+    \\ in complex environments.
+    \\Looking for \textcolor{accent}{English-speaking opportunities} in \textcolor{accent}{Ireland} to improve language skills.
+    \\Passionate about Japanese culture, open-minded, and eager for new challenges.
+}
+\photo[square]{profile.jpg}{\dimexpr \headerheight-\marginbottom}
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+    
+    \email{contact@cyril-defaye.fr}
+    \phone{+33 6 68 16 12 33}
+    \location{Aix en Provence (13100), France}
+    \infofield{}{\textcolor{accent}{\textit{open to relocation in Ireland}}}
+    \homepage{cyril-defaye.fr}{https://www.cyril-defaye.fr}
+    \github{@chinjto}{\myGithubHome}
+    \linkedin{Cyril DEFAYE}{https://www.linkedin.com/in/cyrildefaye/}
+    
+    \section{Skills}
+    
+    \skillsection{Programming}
+    \skill{Java / Spring boot}{5}
+    \skill{Typescript / Angular}{4}
+    \skill{HTML/CSS}{5}
+    \skill{LaTeX}{2}
+    
+    \vspace{0.5em}
+    \skillsection{Software \& Tools}
+    \skill{IDE}{5}
+    (e.g. IntelliJ, VSCode, ...)\\
+    \skill{Docker}{4}
+    \skill{CI/CD}{4}
+    (e.g. Gitlab, Jenkins, XL Deploy, ...)\\
+    \skill{Linux}{4}
+    \skill{Office Suite}{4}
+    
+    \vspace{0.5em}
+    \skillsection{Artificial Intelligence}
+    \skill{Prompting}{2}
+    \skill{Vibe Coding}{2}
+    \skill{LLM mechanisms}{2}
+    
+    \vspace{0.5em}
+    \skillsection{Languages}
+    \skill{French}{5}
+    \skill{English}{3}
+    \skill{Japanese}{1}
+    
+    \bigskip
+    
+    \section{Certificates}
+    \simpleskill{L'atelier RGPD (CNIL GDPR MOOC)}
+    \vspace{0.5em}
+    \simpleskill{SST (First Aid Response equivalent)}
+    \textit{December 2024 -- December 2026}\\
+
+}
+\mainbar{
+    \section[\faGears]{Work history}
+    \job{05/2022 - 10/2025}
+        {ADSN, Aix en Provence area, France}
+        {Lead Software Engineer}
+        {}
+    \job{01/2021 - 04/2022}
+        {Monext, Aix en Provence, France}
+        {Confirmed Software Engineer}
+        {}
+    \job{09/2018 - 12/2020}
+        {Extia, Aix en Provence, France}
+        {Software Engineer Consultant}
+        {}
+    \job{09/2013 - 06/2018}
+        {Natixis, Paris area, France}
+        {Software Engineer}
+        {Worked \textcolor{accent}{4 months on-site in Poland} within a software vendor team (\textcolor{accent}{\textit{English daily}})}
+    \job{09/2012 - 09/2013}
+        {SCFI, Paris, France}
+        {Web Developer and Integrator}
+        {}
+    
+    \section[\faMortarBoard]{Education}
+    \job{09/2013 - 09/2015}
+        {AFTI, Orsay, France}
+        {ETGL}
+        {Software engineering expertise\\master level}
+    \job{09/2012 - 09/2013}
+        {UPEC, Fontainebleau, France}
+        {Licence Professionnelle BDISe}
+        {Database, internet and security expertise\\bachelor level}
+    \job{09/2009 - 06/2012}
+        {UPEC, Fontainebleau, France}
+        {DUT Informatique}
+        {Global IT expertise\\university 2\nd degree}
+
+    \section{General Skills}
+    \smallskip % additional skip because tag outlines use up space
+    \tag{Java 25} \tagmajor{Spring Boot 3}[integration, batch, data, security] \tag{PL/SQL}\\
+    \tagmajor{Angular 21}[standalone, signals] \tag{Material} \tag{PrimeNG} \tag{Tailwind}\\
+    \tag{Module Federation} \tag{API-First}[OAS] \tag{DDD} \tag{UML} \tag{TDD} \tag{E2E}\\
+    \tagmajor{Banking} \tagmajor{Payments} \tag{Healthcare} \tag{Telecom} \tag{Defense} \tagmajor{Notary}\\
+    
+    \hobbies
+
+    \ifthenelse{\boolean{isShort}}{
+       \section{More details}
+        For more details, see my \href{\myGithubRoot/my-resume/full-resume.pdf}{full resume}.
+    }{}
+    
+}
+\makebody
+\clearpage
