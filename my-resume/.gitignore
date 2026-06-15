@@ -1,4 +1,4 @@
-# LaTeX intermediate files to ignore
+# LaTeX build artifacts
 *.aux
 *.log
 *.out
@@ -9,3 +9,22 @@
 *.bbl
 *.blg
 *.run.xml
+*.lof
+*.lot
+*.idx
+*.ilg
+*.ind
+*.nav
+*.snm
+*.vrb
+
+# Generated PDFs
+build/
+
+# Temporary files
+*.tmp
+*.bak
+
+# OS
+.DS_Store
+Thumbs.db
