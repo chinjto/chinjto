@@ -1,10 +1,10 @@
 % !TeX program = xelatex
 
 \documentclass[%singlesided,
-               doublesided,
-               paper=a4,
-               fontsize=10pt
-              ]{my-commands}
+    doublesided,
+    paper=a4,
+    fontsize=10pt
+]{../../../commons/my-commands}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set geometry
@@ -41,15 +41,24 @@
 % set document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{my-data}
+\input{../../../commons/my-data}
 
 \newboolean{isShort}
 \newboolean{isFull}
-\setboolean{isShort}{true}
-\setboolean{isFull}{false}
+\setboolean{isShort}{false}
+\setboolean{isFull}{true}
 
 \begin{document}
 
-    \input{global/summary}
+    \input{../../../sections/global/summary}
+
+    \input{../../../sections/works/adsn}
+    \input{../../../sections/works/monext}
+    \input{../../../sections/works/extia}
+    \input{../../../sections/works/natixis}
+    \input{../../../sections/works/scfi}
+    \input{../../../sections/works/hippopotamus}
+    
+    \input{../../../sections/global/study}
 
 \end{document}

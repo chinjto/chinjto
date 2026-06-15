@@ -1,10 +1,10 @@
 % !TeX program = xelatex
 
 \documentclass[%singlesided,
-               doublesided,
-               paper=a4,
-               fontsize=10pt
-              ]{my-commands}
+    doublesided,
+    paper=a4,
+    fontsize=10pt
+]{../../../commons/my-commands}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set geometry
@@ -41,24 +41,15 @@
 % set document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{my-data}
+\input{../../../commons/my-data}
 
 \newboolean{isShort}
 \newboolean{isFull}
-\setboolean{isShort}{false}
-\setboolean{isFull}{true}
+\setboolean{isShort}{true}
+\setboolean{isFull}{false}
 
 \begin{document}
 
-    \input{global/summary}
-
-    \input{works/adsn}
-    \input{works/monext}
-    \input{works/extia}
-    \input{works/natixis}
-    \input{works/scfi}
-    \input{works/hippopotamus}
-    
-    \input{global/study}
+    \input{../../../sections/global/summary}
 
 \end{document}
