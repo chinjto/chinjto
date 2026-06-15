@@ -1,10 +1,10 @@
 % !TeX program = xelatex
 
 \documentclass[%singlesided,
-               doublesided,
-               paper=a4,
-               fontsize=10pt
-              ]{my-commands}
+    doublesided,
+    paper=a4,
+    fontsize=10pt
+]{cv-resume}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set geometry
@@ -41,7 +41,7 @@
 % set document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{my-data}
+\input{../../../profile/my-data}
 
 \newboolean{isShort}
 \newboolean{isFull}
@@ -50,15 +50,15 @@
 
 \begin{document}
 
-    \input{global/summary}
+    \input{../../../sections/global/summary}
 
-    \input{works/adsn}
-    \input{works/monext}
-    \input{works/extia}
-    \input{works/natixis}
-    \input{works/scfi}
-    \input{works/hippopotamus}
+    \input{../../../sections/works/adsn}
+    \input{../../../sections/works/monext}
+    \input{../../../sections/works/extia}
+    \input{../../../sections/works/natixis}
+    \input{../../../sections/works/scfi}
+    \input{../../../sections/works/hippopotamus}
     
-    \input{global/study}
+    \input{../../../sections/global/study}
 
 \end{document}

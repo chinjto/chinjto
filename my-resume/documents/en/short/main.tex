@@ -1,10 +1,10 @@
 % !TeX program = xelatex
 
 \documentclass[%singlesided,
-               doublesided,
-               paper=a4,
-               fontsize=10pt
-              ]{my-commands}
+    doublesided,
+    paper=a4,
+    fontsize=10pt
+]{cv-resume}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % set geometry
@@ -41,7 +41,7 @@
 % set document
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{my-data}
+\input{../../../profile/my-data}
 
 \newboolean{isShort}
 \newboolean{isFull}
@@ -50,6 +50,6 @@
 
 \begin{document}
 
-    \input{global/summary}
+    \input{../../../sections/global/summary}
 
 \end{document}
