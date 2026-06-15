@@ -36,7 +36,7 @@ See [my resume][my-resume] for more details.
 [<img align="left" alt="chinjto | Facebook" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/facebook.svg" />][facebook]
 [<img align="left" alt="chinjto | Twitter" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/twitter.svg" />][twitter]
 
-[my-resume]: ./my-resume/short-resume.pdf
+[my-resume]: ./my-resume/documents/en/short/main.pdf
 [website]: https://www.cyril-defaye.fr
 [blog]: https://www.chinto.fr
 [linkedin]: https://www.linkedin.com/in/cyrildefaye/
