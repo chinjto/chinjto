@@ -1,0 +1,55 @@
+% Generic adaptations for longer text; independent of language and page content.
+% Opt in after loading chinjto-cv-resume and before \begin{document}.
+\RequirePackage{adjustbox}
+
+% Let contact labels wrap inside the sidebar instead of using an unbreakable box.
+\renewcommand{\infofield}[2]{%
+    \par\noindent\begin{minipage}[t]{5mm}%
+        \centering\textcolor{accent}{\normalsize #1}%
+    \end{minipage}\hspace{0.5em}%
+    \begin{minipage}[t]{\dimexpr\linewidth-5mm-0.5em\relax}%
+        \raggedright #2\strut
+    \end{minipage}\par\vspace{0.2em}\noindent\ignorespaces%
+}
+
+% Keep all five rating dots together, even when the label needs two lines.
+\newsavebox{\skillratingbox}
+\renewcommand{\skill}[2]{%
+    \sbox{\skillratingbox}{%
+        \foreach \x in {1,...,5}{%
+            \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}}%
+    \noindent\begin{minipage}[t]{\dimexpr\linewidth-\wd\skillratingbox-0.5em\relax}%
+        \raggedright\textcolor{emphasis}{\textbf{#1}}\strut
+    \end{minipage}\hfill\usebox{\skillratingbox}\par%
+}
+
+% Compute job columns from their enclosing column, rather than the document width.
+\let\originaljob\job
+\renewcommand{\job}[4]{%
+    \setlength{\jobdateplacelength}{0.4\linewidth}%
+    \setlength{\jobpositionlength}{0.6\linewidth}%
+    \originaljob{#1}{\raggedright #2}{#3}{#4}%
+}
+
+% A long technology label must also stay inside its enclosing column.
+\NewCommandCopy{\originaltag}{\tag}
+\RenewDocumentCommand{\tag}{m o}{%
+    \leavevmode\allowbreak
+    \adjustbox{max width=\linewidth}{%
+        \IfNoValueTF{#2}{\originaltag{#1}}{\originaltag{#1}[#2]}%
+    }\allowbreak%
+}
+
+% Preserve explicit page boundaries if a translated body is taller than the
+% remaining page area. Both columns scale together, only when necessary.
+\newlength{\bodyavailableheight}
+\let\originalmakebody\makebody
+\renewcommand{\makebody}{%
+    \par
+    \setlength{\bodyavailableheight}{\dimexpr\textheight-\pagetotal-\baselineskip\relax}%
+    \noindent\adjustbox{max totalsize={\textwidth}{\bodyavailableheight}}{%
+        \begin{minipage}[t]{\textwidth}%
+            \originalmakebody
+        \end{minipage}%
+    }%
+}

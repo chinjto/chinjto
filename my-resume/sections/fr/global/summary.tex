@@ -1,0 +1,127 @@
+\newcommand{\hobbies}{
+    \section{Centres d'intérêt}
+    \wheelchart{1.5cm}{0.5cm}{
+        8/8em/accent!20/ Culture japonaise,
+        5/8em/accent!40/ Cinéma (américain \& français),
+        2/8em/accent!80/Jeux vidéo,
+        5/8em/accent!60/Jeux de société,
+        4/8em/accent/\textcolor{accent!50}{\textit{Guinness \& cidre}}
+    }
+}
+
+\name{Cyril DEFAYE}
+\tagline{
+    \textcolor{accent}{Ingénieur logiciel senior}, plus de 12 ans d'expérience en \textcolor{accent}{Java} et en développement\\
+    d'applications d'entreprise dans la banque, les paiements et le notariat.\\
+    Solide expérience en back-end, en pilotage technique et en environnements critiques.\\
+    Recherche d'opportunités en développement logiciel en \textcolor{accent}{Irlande},\\
+    dans des \textcolor{accent}{environnements internationaux anglophones}.
+}
+\photo[square]{../../../assets/profile.jpg}{\dimexpr \headerheight-\marginbottom}
+
+\makeheader
+
+\highlightbar{
+
+    \section{Contact}
+
+    \email{contact@cyril-defaye.fr}
+    \phone{+33 6 68 16 12 33}
+    \location{Dublin, Irlande}
+    \homepage{cyril-defaye.fr}{https://www.cyril-defaye.fr}
+    \github{@chinjto}{\myGithubHome}
+    \linkedin{Cyril DEFAYE}{https://www.linkedin.com/in/cyrildefaye/}
+
+    \section{Compétences}
+
+    \skillsection{Programmation}
+    \skill{Java / Spring Boot}{5}
+    \skill{TypeScript / Angular}{4}
+    \skill{HTML/CSS}{5}
+    \skill{LaTeX}{2}
+
+    \vspace{0.5em}
+    \skillsection{Logiciels \& outils}
+    \skill{Outils de développement}{5}
+    (p. ex. IntelliJ, VSCode, ...)\\
+    \skill{Docker}{4}
+    \skill{CI/CD}{4}
+    (p. ex. GitLab, Jenkins, XL Deploy, ...)\\
+    \skill{Linux}{4}
+    \skill{Conception de systèmes}{3}
+
+    \vspace{0.5em}
+    \skillsection{Intelligence artificielle}
+    \skill{Prompt engineering}{2}
+    \skill{Développement assisté par IA}{2}
+    \skill{Workflows LLM}{2}
+
+    \vspace{0.5em}
+    \skillsection{Langues}
+    \skill{Français}{5}
+    \skill{Anglais}{3}
+    \skill{Japonais}{1}
+
+    \bigskip
+
+    \section{Certifications}
+    \simpleskill{L'atelier RGPD (MOOC de la CNIL)}
+    \vspace{0.5em}
+    \simpleskill{SST (Sauveteur secouriste du travail)}
+    \textit{Décembre 2024 -- décembre 2026}\\
+
+}
+\mainbar{
+    \section[\faGears]{Expériences professionnelles}
+    \job{05/2022 - 10/2025}
+        {ADSN, région d'Aix-en-Provence, France}
+        {Tech Lead}
+        {}
+    \job{01/2021 - 04/2022}
+        {Monext, Aix-en-Provence, France}
+        {Ingénieur logiciel confirmé}
+        {}
+    \job{09/2018 - 12/2020}
+        {Extia, Aix-en-Provence, France}
+        {Consultant en développement logiciel}
+        {}
+    \job{09/2013 - 06/2018}
+        {Natixis, région parisienne, France}
+        {Ingénieur logiciel}
+        {Mission de \textcolor{accent}{4 mois sur site en Pologne} dans l'équipe d'un éditeur logiciel (\textcolor{accent}{\textit{anglais au quotidien}})}
+    \job{09/2012 - 09/2013}
+        {SCFI, Paris, France}
+        {Développeur et intégrateur web}
+        {}
+
+    \section[\faMortarBoard]{Formation}
+    \job{09/2013 - 09/2015}
+        {AFTI, Orsay, France}
+        {ETGL}
+        {Expertise en génie logiciel\\niveau bac+5}
+    \job{09/2012 - 09/2013}
+        {UPEC, Fontainebleau, France}
+        {Licence professionnelle BDISe}
+        {Bases de données, Internet et sécurité\\niveau licence}
+    \job{09/2009 - 06/2012}
+        {UPEC, Fontainebleau, France}
+        {DUT Informatique}
+        {Formation générale en informatique\\diplôme universitaire de technologie (bac+2)}
+
+    \section{Compétences générales}
+    \smallskip % espace supplémentaire pour les contours des étiquettes
+    \tag{Java 25} \tagmajor{Spring Boot 3}[integration, batch, data, security] \tag{PL/SQL}\\
+    \tagmajor{Angular 21}[standalone, signals] \tag{Material} \tag{PrimeNG} \tag{Tailwind}\\
+    \tag{Module Federation} \tag{API-First}[OAS] \tag{DDD} \tag{UML} \tag{TDD} \tag{E2E}\\
+    \tagmajor{Banque} \tagmajor{Paiements} \tag{Santé} \tag{Télécoms} \tag{Défense} \tagmajor{Notariat}\\
+
+    \hobbies
+
+    \ifthenelse{\boolean{isShort}}{
+       \section{Pour en savoir plus}
+        Retrouvez davantage de détails dans mon \href{\myGithubRoot/my-resume/documents/fr/full/main.pdf}{CV complet}.
+    }{}
+
+}
+\makebody
+\clearpage
