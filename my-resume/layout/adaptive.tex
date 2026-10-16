@@ -1,0 +1,69 @@
+% Generic adaptations for longer text; independent of language and page content.
+% Opt in after loading chinjto-cv-resume and before \begin{document}.
+
+% Let contact labels wrap inside the sidebar instead of using an unbreakable box.
+\renewcommand{\infofield}[2]{%
+    \par\noindent\begin{minipage}[t]{5mm}%
+        \centering\textcolor{accent}{\normalsize #1}%
+    \end{minipage}\hspace{0.5em}%
+    \begin{minipage}[t]{\dimexpr\linewidth-5mm-0.5em\relax}%
+        \raggedright #2\strut
+    \end{minipage}\par\vspace{0.2em}\noindent\ignorespaces%
+}
+
+% Keep all five rating dots together, even when the label needs two lines.
+\newsavebox{\skillratingbox}
+\renewcommand{\skill}[2]{%
+    \sbox{\skillratingbox}{%
+        \foreach \x in {1,...,5}{%
+            \space{\ifnumgreater{\x}{#2}{\color{gray}}{\color{accent}}\faCircle}}}%
+    \noindent\begin{minipage}[t]{\dimexpr\linewidth-\wd\skillratingbox-0.5em\relax}%
+        \raggedright\textcolor{emphasis}{\textbf{#1}}\strut
+    \end{minipage}\hfill\usebox{\skillratingbox}\par%
+}
+
+% Compute job columns from their enclosing column, rather than the document width.
+\newlength{\jobentryspacing}
+\setlength{\jobentryspacing}{0.5em}
+\let\originaljob\job
+\xpatchcmd{\originaljob}{\vspace{0.5em}}{\vspace{\jobentryspacing}}{}{
+    \PackageError{resume-layout}{Cannot configure job entry spacing}{Check the job definition in chinjto-cv-resume.}
+}
+\renewcommand{\job}[4]{%
+    \setlength{\jobdateplacelength}{0.4\linewidth}%
+    \setlength{\jobpositionlength}{0.6\linewidth}%
+    \originaljob{#1}{\raggedright #2}{#3}{#4}%
+}
+
+% Wrap an unusually long technology label instead of shrinking its text.
+\NewCommandCopy{\originaltag}{\tag}
+\newsavebox{\technologytagbox}
+\RenewDocumentCommand{\tag}{m o}{%
+    \leavevmode\allowbreak
+    \sbox{\technologytagbox}{%
+        \IfNoValueTF{#2}{\originaltag{#1}}{\originaltag{#1}[#2]}%
+    }%
+    \ifdim\wd\technologytagbox>\linewidth
+        \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,
+            inner xsep=1ex,inner ysep=0.75ex,
+            text width=\dimexpr\linewidth-2ex-0.4pt\relax,align=left]{%
+                #1\IfValueT{#2}{ (\textit{#2})}};%
+    \else
+        \usebox{\technologytagbox}%
+    \fi\allowbreak
+}
+
+% Keep the class's native font sizes. Explicit page boundaries remain in the
+% content; overflowing pages must be edited rather than automatically scaled.
+\let\originalmakebody\makebody
+\renewcommand{\makebody}{%
+    \par\noindent\originalmakebody\par
+}
+
+% Reserve identical line geometry whether optional footer content is shown or not.
+\newcommand{\reservedfooterline}[1]{%
+    \par\smallskip
+    \begin{minipage}[t][\baselineskip][t]{\linewidth}%
+        \strut #1%
+    \end{minipage}%
+}
