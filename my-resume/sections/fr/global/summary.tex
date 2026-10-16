@@ -1,3 +1,8 @@
+% Keep the expanded chronology at native font sizes on the summary page.
+\begingroup
+\setlength{\bigskipamount}{5pt plus 2pt minus 2pt}
+\setlength{\jobentryspacing}{2pt}
+
 \newcommand{\hobbies}{
     \section{Centres d'intérêt}
     % Relative importance: weights sum to 100; percentages are not printed.
@@ -74,6 +79,12 @@
 }
 \mainbar{
     \section[\faGears]{Expériences professionnelles}
+    \job{11/2025 – Aujourd'hui}
+        {Irlande, puis Japon}
+        {Projet de mobilité internationale}
+        {\textcolor{accent}{\textbf{Irlande}} — Prospection du marché IT et candidatures ; séjour à \textcolor{accent}{\mbox{Dublin}} en juin 2026.
+        \par\smallskip
+        \textcolor{accent}{\textbf{Japon}} — Projet personnel d'expatriation en préparation : apprentissage du japonais, étude du marché IT et des possibilités de mobilité.}
     \job{05/2022 - 10/2025}
         {ADSN, région d'Aix-en-Provence, France}
         {Tech Lead}
@@ -89,7 +100,7 @@
     \job{09/2013 - 06/2018}
         {Natixis, région parisienne, France}
         {Ingénieur logiciel}
-        {Mission de \textcolor{accent}{4 mois sur site en Pologne} dans l'équipe d'un éditeur logiciel (\textcolor{accent}{\textit{anglais au quotidien}})}
+        {}
     \job{09/2012 - 09/2013}
         {SCFI, Paris, France}
         {Développeur et intégrateur web}
@@ -119,11 +130,14 @@
 
     \hobbies
 
-    \ifthenelse{\boolean{isShort}}{
-        \smallskip
-        Retrouvez davantage de détails dans mon \href{\myGithubRoot/my-resume/documents/fr/full/main.pdf}{CV complet}.
-    }{}
+    % The link is the only variant-specific content on the shared first page.
+    \reservedfooterline{%
+        \ifthenelse{\boolean{isShort}}{%
+            Retrouvez davantage de détails dans mon \href{\myGithubRoot/my-resume/documents/fr/full/main.pdf}{CV complet}.%
+        }{}%
+    }
 
 }
 \makebody
 \clearpage
+\endgroup

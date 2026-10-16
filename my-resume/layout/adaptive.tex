@@ -23,7 +23,12 @@
 }
 
 % Compute job columns from their enclosing column, rather than the document width.
+\newlength{\jobentryspacing}
+\setlength{\jobentryspacing}{0.5em}
 \let\originaljob\job
+\xpatchcmd{\originaljob}{\vspace{0.5em}}{\vspace{\jobentryspacing}}{}{
+    \PackageError{resume-layout}{Cannot configure job entry spacing}{Check the job definition in chinjto-cv-resume.}
+}
 \renewcommand{\job}[4]{%
     \setlength{\jobdateplacelength}{0.4\linewidth}%
     \setlength{\jobpositionlength}{0.6\linewidth}%
@@ -53,4 +58,12 @@
 \let\originalmakebody\makebody
 \renewcommand{\makebody}{%
     \par\noindent\originalmakebody\par
+}
+
+% Reserve identical line geometry whether optional footer content is shown or not.
+\newcommand{\reservedfooterline}[1]{%
+    \par\smallskip
+    \begin{minipage}[t][\baselineskip][t]{\linewidth}%
+        \strut #1%
+    \end{minipage}%
 }
