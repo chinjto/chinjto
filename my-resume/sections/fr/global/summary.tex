@@ -1,21 +1,22 @@
 \newcommand{\hobbies}{
     \section{Centres d'intérêt}
+    % Relative importance: weights sum to 100; percentages are not printed.
     \wheelchart{1.5cm}{0.5cm}{
-        8/8em/accent!20/ Culture japonaise,
-        5/8em/accent!40/ Cinéma (américain \& français),
-        2/8em/accent!80/Jeux vidéo,
-        5/8em/accent!60/Jeux de société,
-        4/8em/accent/\textcolor{accent!50}{\textit{Guinness \& cidre}}
+        30/8em/accent!85/Culture japonaise,
+        25/8em/accent!65/Cinéma (américain \& français),
+        20/8em/accent!45/Jeux vidéo,
+        15/8em/accent!30/Jeux de société,
+        10/8em/accent!18/Musculation \& fitness
     }
 }
 
 \name{Cyril DEFAYE}
 \tagline{
-    \textcolor{accent}{Ingénieur logiciel senior}, plus de 12 ans d'expérience en \textcolor{accent}{Java} et en développement\\
-    d'applications d'entreprise dans la banque, les paiements et le notariat.\\
-    Solide expérience en back-end, en pilotage technique et en environnements critiques.\\
-    Recherche d'opportunités en développement logiciel en \textcolor{accent}{Irlande},\\
-    dans des \textcolor{accent}{environnements internationaux anglophones}.
+    \textcolor{accent}{Tech Lead / Ingénieur logiciel senior Java \& Angular}\\
+    Plus de 12 ans d'expérience : \textcolor{accent}{Java, Spring Boot, Angular} et architecture applicative.\\
+    Développement back-end / full-stack, pilotage technique et accompagnement d'équipes.\\
+    Banque, paiements, monétique et notariat.\\
+    Missions de \textcolor{accent}{6 à 12 mois} sur \textcolor{accent}{Angers et Poitiers} : CDD, portage salarial ou freelance.
 }
 \photo[square]{../../../assets/profile.jpg}{\dimexpr \headerheight-\marginbottom}
 
@@ -27,12 +28,13 @@
 
     \email{contact@cyril-defaye.fr}
     \phone{+33 6 68 16 12 33}
-    \location{Dublin, Irlande}
+    \location{Thouars (79), France}
     \homepage{cyril-defaye.fr}{https://www.cyril-defaye.fr}
     \github{@chinjto}{\myGithubHome}
     \linkedin{Cyril DEFAYE}{https://www.linkedin.com/in/cyrildefaye/}
 
     \section{Compétences}
+    \textit{Autoévaluation sur 5}\par\smallskip
 
     \skillsection{Programmation}
     \skill{Java / Spring Boot}{5}
@@ -41,19 +43,18 @@
     \skill{LaTeX}{2}
 
     \vspace{0.5em}
-    \skillsection{Logiciels \& outils}
+    \skillsection{Outils \& pratiques de développement}
     \skill{Outils de développement}{5}
-    (p. ex. IntelliJ, VSCode, ...)\\
+    (IntelliJ, VS Code…)\\
     \skill{Docker}{4}
     \skill{CI/CD}{4}
-    (p. ex. GitLab, Jenkins, XL Deploy, ...)\\
+    (GitLab, Jenkins, XL Deploy…)\\
     \skill{Linux}{4}
     \skill{Conception de systèmes}{3}
 
-    \vspace{0.5em}
-    \skillsection{Intelligence artificielle}
+    \smallskip
     \skill{Prompt engineering}{2}
-    \skill{Développement assisté par IA}{2}
+    \skill{Développement\\assisté par IA}{2}
     \skill{Workflows LLM}{2}
 
     \vspace{0.5em}
@@ -83,7 +84,7 @@
         {}
     \job{09/2018 - 12/2020}
         {Extia, Aix-en-Provence, France}
-        {Consultant en développement logiciel}
+        {Consultant full-stack}
         {}
     \job{09/2013 - 06/2018}
         {Natixis, région parisienne, France}
@@ -92,33 +93,34 @@
     \job{09/2012 - 09/2013}
         {SCFI, Paris, France}
         {Développeur et intégrateur web}
-        {}
+        {Alternance}
 
     \section[\faMortarBoard]{Formation}
     \job{09/2013 - 09/2015}
         {AFTI, Orsay, France}
         {ETGL}
-        {Expertise en génie logiciel\\niveau bac+5}
+        {Expert en conduite et ingénierie de logiciel et système\\Titre obtenu en 2015 — bac+5}
     \job{09/2012 - 09/2013}
         {UPEC, Fontainebleau, France}
         {Licence professionnelle BDISe}
-        {Bases de données, Internet et sécurité\\niveau licence}
+        {Bases de données, Internet et sécurité\\Diplôme obtenu en 2013 — bac+3}
     \job{09/2009 - 06/2012}
         {UPEC, Fontainebleau, France}
         {DUT Informatique}
-        {Formation générale en informatique\\diplôme universitaire de technologie (bac+2)}
+        {Diplôme universitaire de technologie en informatique\\Diplôme obtenu en 2012 — bac+2}
 
-    \section{Compétences générales}
+    \section{Expertises techniques \& métier}
     \smallskip % espace supplémentaire pour les contours des étiquettes
     \tag{Java 25} \tagmajor{Spring Boot 3}[integration, batch, data, security] \tag{PL/SQL}\\
     \tagmajor{Angular 21}[standalone, signals] \tag{Material} \tag{PrimeNG} \tag{Tailwind}\\
     \tag{Module Federation} \tag{API-First}[OAS] \tag{DDD} \tag{UML} \tag{TDD} \tag{E2E}\\
-    \tagmajor{Banque} \tagmajor{Paiements} \tag{Santé} \tag{Télécoms} \tag{Défense} \tagmajor{Notariat}\\
+    \tagmajor{Banque} \tagmajor{Paiements} \tagmajor{Monétique} \tag{Santé}\\
+    \tag{Télécoms} \tag{Défense} \tagmajor{Notariat}\\
 
     \hobbies
 
     \ifthenelse{\boolean{isShort}}{
-       \section{Pour en savoir plus}
+        \smallskip
         Retrouvez davantage de détails dans mon \href{\myGithubRoot/my-resume/documents/fr/full/main.pdf}{CV complet}.
     }{}
 

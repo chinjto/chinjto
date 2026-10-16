@@ -1,6 +1,11 @@
+% Compact spacing for the qualifications, preserving the native font sizes.
+\begingroup
+\setlength{\medskipamount}{2pt plus 1pt minus 1pt}
+\setlength{\bigskipamount}{8pt plus 2pt minus 2pt}
 \pagestyle{highlightmain}
 
 \highlightbar{
+    \raggedright\hyphenpenalty=10000\relax
     \section{AFTI}
     \textit{09/2013 - 09/2015}
 
@@ -12,8 +17,9 @@
     \location{Orsay, France}
 
     \vspace{0.5em}
+
     \section{UPEC}
-    \textit{09/2009 - 06/2013}
+    \textit{09/2009 - 09/2013}
 
     L'Université Paris-Est Créteil (UPEC) est une université publique pluridisciplinaire de la région parisienne proposant des formations de premier et deuxième cycles en sciences, ingénierie, santé et sciences sociales.
 
@@ -37,20 +43,21 @@
     \homepage{cnil.fr}{https://cnil.fr/}
     \linkedin{CNIL}{https://www.linkedin.com/company/cnil---commission-nationale-de-l'informatique-et-des-libert-s/}
 }
-
 \mainbar{
 
 % AFTI - ETGL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \section[\faMortarBoard]{AFTI - ETGL}
-    \textit{09/2013 - 09/2015 (niveau bac+5)}
+    \textit{09/2013 - 09/2015 — Titre obtenu (bac+5)}
+
+    \textbf{Expert en conduite et ingénierie de logiciel et système}
 
     Formation avancée en génie logiciel axée sur l'architecture des systèmes, le développement d'applications complexes, la qualité logicielle et la réalisation de projets techniques.
 
     \subsection{Compétences acquises et approfondies}
     \tag{Langage C} \tag{Langage B}[\& Ada] \tag{J2EE}[Struts] \tag{REST}\\
-    \tag{Génie logiciel} \tag{DoD}[MIL-STD-498] \tag{UML} \tag{Design Patterns}
+    \tag{Génie logiciel} \tag{DoD}[MIL-STD-498] \tag{UML} \tag{Patrons de conception}
 
     \subsection{Projet marquant}
     \begin{itemize}[label=\faTrophy]
@@ -58,11 +65,14 @@
         Développement d'une sonde de ballon météorologique pour collecter des données atmosphériques : conception, fabrication et déploiement à des fins de recherche scientifique.
     \end{itemize}
 
-% UPEC - Licence Professionnelle BDISe
+% UPEC - Licence professionnelle BDISe
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-    \section[\faMortarBoard]{UPEC - Licence Professionnelle BDISe}
-    \textit{09/2012 - 09/2013 (niveau licence)}
+    \section[\faMortarBoard]{UPEC - Licence professionnelle BDISe}
+    \textit{09/2012 - 09/2013 — Diplôme obtenu (bac+3)}
+
+    \textbf{Systèmes informatiques et logiciels,\\
+    spécialité Bases de données, Internet et sécurité}
 
     Formation spécialisée en conception et administration de bases de données, intégration de systèmes d'entreprise et développement d'applications métier.
 
@@ -74,9 +84,9 @@
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
     \section[\faMortarBoard]{UPEC - DUT Informatique}
-    \textit{09/2009 - 06/2012 (diplôme universitaire de technologie)}
+    \textit{09/2009 - 06/2012 — Diplôme obtenu (bac+2)}
 
-    Formation aux fondamentaux du développement logiciel, de l'algorithmique, des structures de données et de l'informatique.
+    Formation aux fondamentaux de l'informatique : développement logiciel, algorithmique et structures de données.
 
     \subsection{Compétences acquises et approfondies}
     \tag{Matériel} \tag{Systèmes} \tag{Bases de données}[Oracle] \tag{Réseaux}\\
@@ -101,5 +111,5 @@
     \end{itemize}
 
 }
-
 \makebody
+\endgroup

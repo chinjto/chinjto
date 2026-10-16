@@ -1,6 +1,5 @@
 % Generic adaptations for longer text; independent of language and page content.
 % Opt in after loading chinjto-cv-resume and before \begin{document}.
-\RequirePackage{adjustbox}
 
 % Let contact labels wrap inside the sidebar instead of using an unbreakable box.
 \renewcommand{\infofield}[2]{%
@@ -31,25 +30,27 @@
     \originaljob{#1}{\raggedright #2}{#3}{#4}%
 }
 
-% A long technology label must also stay inside its enclosing column.
+% Wrap an unusually long technology label instead of shrinking its text.
 \NewCommandCopy{\originaltag}{\tag}
+\newsavebox{\technologytagbox}
 \RenewDocumentCommand{\tag}{m o}{%
     \leavevmode\allowbreak
-    \adjustbox{max width=\linewidth}{%
+    \sbox{\technologytagbox}{%
         \IfNoValueTF{#2}{\originaltag{#1}}{\originaltag{#1}[#2]}%
-    }\allowbreak%
+    }%
+    \ifdim\wd\technologytagbox>\linewidth
+        \tikz[baseline]\node[anchor=base,draw=body!30,rounded corners,
+            inner xsep=1ex,inner ysep=0.75ex,
+            text width=\dimexpr\linewidth-2ex-0.4pt\relax,align=left]{%
+                #1\IfValueT{#2}{ (\textit{#2})}};%
+    \else
+        \usebox{\technologytagbox}%
+    \fi\allowbreak
 }
 
-% Preserve explicit page boundaries if a translated body is taller than the
-% remaining page area. Both columns scale together, only when necessary.
-\newlength{\bodyavailableheight}
+% Keep the class's native font sizes. Explicit page boundaries remain in the
+% content; overflowing pages must be edited rather than automatically scaled.
 \let\originalmakebody\makebody
 \renewcommand{\makebody}{%
-    \par
-    \setlength{\bodyavailableheight}{\dimexpr\textheight-\pagetotal-\baselineskip\relax}%
-    \noindent\adjustbox{max totalsize={\textwidth}{\bodyavailableheight}}{%
-        \begin{minipage}[t]{\textwidth}%
-            \originalmakebody
-        \end{minipage}%
-    }%
+    \par\noindent\originalmakebody\par
 }
